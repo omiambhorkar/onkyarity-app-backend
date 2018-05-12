@@ -1,1 +1,1 @@
-java $JAVA_OPTS -jar target/onkyarity-app-backend-1.0.jar --server.port=$PORT $JAR_OPTS
+java $JAVA_OPTS -jar build/libs/onkyarity-app-backend-0.0.1-SNAPSHOT.jar --server.port=$PORT $JAR_OPTS
