@@ -20,5 +20,12 @@ public class TestController {
 		mv.addObject("msg", "sub");
 		return mv;
 	}
+	
+	@RequestMapping("/div")
+	public ModelAndView div() {
+		ModelAndView mv = new ModelAndView("display");
+		mv.addObject("msg", "div");
+		return mv;
+	}
 
 }
