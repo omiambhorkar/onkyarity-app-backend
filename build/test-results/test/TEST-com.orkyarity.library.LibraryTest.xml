@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.orkyarity.library.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-12T07:16:56" hostname="Onkars-MacBook-Pro.local" time="0.002">
+<testsuite name="com.orkyarity.library.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-12T07:56:17" hostname="Onkars-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="testSomeLibraryMethod" classname="com.orkyarity.library.LibraryTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
