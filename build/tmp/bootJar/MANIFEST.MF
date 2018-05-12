@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Start-Class: com.onkyarity.controller.AppMainController
+Start-Class: com.onkyarity.AppMain
 Main-Class: org.springframework.boot.loader.JarLauncher
 

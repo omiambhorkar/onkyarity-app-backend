@@ -40,10 +40,21 @@ dependencies {
 	//compileOnly ('javax.servlet:javax.servlet-api')
 	compile ('org.springframework:spring-webmvc')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('org.postgresql:postgresql')
+	compile('org.hibernate:hibernate-core')
+	compile group: 'org.hibernate', name: 'hibernate-annotations', version: '3.5.6-Final'
+	compile group: 'hibernate', name: 'hibernate', version: '3.0.5'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.2.RELEASE'
+	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.17.Final'
+	//compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+	compile group: 'javax.transaction', name: 'jta', version: '1.1'
+
+	
+	
 }
 
 jar {
    manifest {
-      attributes 'Main-Class': 'com.onkyarity.controller.AppMainController'
+      attributes 'Main-Class': 'com.onkyarity.controller.AppMain'
    }
 }
