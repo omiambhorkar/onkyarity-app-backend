@@ -1,0 +1,49 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+plugins {
+  id "com.heroku.sdk.heroku-gradle" version "1.0.1"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+
+group = 'onkyarity-app-backend'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	//compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.1.RELEASE', ext: 'pom'
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	//compile ('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('org.springframework:spring-context')
+	compile('javax.servlet:jstl')
+	compile('org.springframework:spring-web')
+	//compileOnly ('javax.servlet:javax.servlet-api')
+	compile ('org.springframework:spring-webmvc')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'com.onkyarity.controller.AppMainController'
+   }
+}
